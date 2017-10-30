@@ -31,24 +31,17 @@ module.exports = function(grunt) {
         },
       }
     }
-  });
-	module.exports = function(grunt) {
-
-	grunt.initConfig({
 		jshint: {
-			all: ['js/*.js']
+			all: ['assets/js/*.js']
     }
   });
-
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-
-  grunt.registerTask('default', ['jshint']);
-
-  };
+  
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task(s).
   grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
+  grunt.registerTask('default', ['jshint']);
 };
