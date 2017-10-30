@@ -1,22 +1,25 @@
 
 		var a = 6;
 		var b = 4;
-		var wartosc = (a * a) - (2 * a * b) + (b * b); 
-		console.log('wynik działania na a i b to ' + wartosc);
+		var value = (a * a) - (2 * a * b) + (b * b); 
+		console.log('wynik działania na a i b to ' + value);
 		
 		
-		if (wartosc === 0) {
+		if (value === 0) {
 			console.log('wynik równy zero');
-			} else if (wartosc >= 0) {
+			} else if (value >= 0) {
 			console.log('wynik ten jest dodatni i różny od zera');
-			} else if (wartosc <= 0){
+			} else if (value <= 0){
 			console.log('wynik ten jest ujemny i różny od zera');
 			}
 			
 		
 		var resultEl = document.getElementById('result');
-		resultEl.innerHTML = '<p>' + wartosc + '</p>';
+		resultEl.innerHTML = '<p>' + value + '</p>';
 		
-		var selectedTab = 'details';
+		var selectedTab = 'result';
+		
+		
+
 
 	
