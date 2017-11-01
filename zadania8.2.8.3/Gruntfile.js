@@ -22,26 +22,33 @@ module.exports = function(grunt) {
         }]
       }
     },
-    watch: {
+    
+		jshint: {
+			all: ['assets/js/*.js']
+    },
+	
+	watch: {
       styles: {
         files: ['assets/sass/main.scss'],
         tasks: ['sass'],
         options: {
           spawn: false,
         },
+      },
+
+      lint: {
+        files: ['assets/js/*.js'],
+        tasks: ['jshint'],
       }
-    }
-		jshint: {
-			all: ['assets/js/*.js']
-    }
+    },
   });
   
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
-  grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'jshint', 'watch']);
 };
