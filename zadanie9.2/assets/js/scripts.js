@@ -5,12 +5,12 @@ const array = allNames.concat( femaleNames, maleNames );
 console.log( array );
 
 const test = [ 'Adam', 'Andrzej' ];
-const x = test.push( 'Hubert' );
+test.push( 'Hubert' );
 console.log( test );
 
 const newName = 'Marian';
 if ( allNames.indexOf( newName ) === -1 ){
-  const y = allNames.push( newName );
+  allNames.push( newName );
   console.log( allNames );
 }
 
