@@ -1,6 +1,10 @@
 function drawTree( 5 ) {
-  for ( const i = 0 ; i < 5 ; i++ ) {
-    console.log( i );
+  for ( let i = 0 ; i < 5 ; i++ ) {
+    let star = '';
+      for ( let j = ; star + = '*';){
+      console.log(star)
+      }
   }
 }
 
+ 
