@@ -1,7 +1,7 @@
-const btn = document.getElementsByClassName( 'button' );
+let btn = document.getElementsByClassName( 'button' );
 console.log( btn.length );
 
-for ( const btn = 0 ; btn < 4 ; btn++ ){
+for ( let btn = 0 ; btn < btn.length ; btn++ ){
   alert( btn );
 }
 
