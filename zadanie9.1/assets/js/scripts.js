@@ -4,7 +4,7 @@ function getTriangleArea() {
   if ( ( a  >= 0 ) && ( h >= 0 ) ) {
     const result = ( a * h / 2 );
     return result;
-  } else ( ( a  <= 0 ) && ( h <= 0 ) ) {
+  } else {
     console.log ( 'wrong data' );
   }
 }
