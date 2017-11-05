@@ -1,7 +1,7 @@
 let btn = document.getElementsByClassName( 'button' );
 console.log( btn.length );
 
-for ( let btn = 0 ; btn < btn.length ; btn++ ){
+for ( let i = 0 ; i < btn.length ; i++ ){
   alert ( btn[ i ].innerText );
 }
 
