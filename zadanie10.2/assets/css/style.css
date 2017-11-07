@@ -1,0 +1,66 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none !important; }
+
+/*General Use*/
+/*End General Use*/
+/*Header Section Start*/
+.header {
+  background: url("../img/1.jpeg") center center;
+  background-size: cover;
+  min-height: 70vh; }
+
+.col-md-12 {
+  overflow: hidden; }
+  .col-md-12 .desc_line {
+    color: #778899;
+    text-align: center;
+    margin: 20px auto; }
+    .col-md-12 .desc_line p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: justify;
+      margin: 5px 20%;
+      padding: 10px;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.5); }
+
+.button {
+  text-align: center; }
+  .button .btn1 {
+    background-color: #778899;
+    -webkit-box-shadow: inset 1px 1px 50px px #FFFFFF;
+    box-shadow: inset 1px 1px 50px px #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    margin-top: 50px; }
+    .button .btn1 a {
+      color: #fff;
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+      font-family: lato;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px #030303; }
+
+/*Header Section END*/
+/*Icons Section Start*/
+.icons {
+  text-align: center;
+  margin: 10px auto;
+  display: inline-block;
+  margin: 5px auto; }
+  .icons i {
+    font-size: 50px;
+    color: #000; }
+
+.icon_desc {
+  color: #000; }
+
+/*# sourceMappingURL=style.css.map */
