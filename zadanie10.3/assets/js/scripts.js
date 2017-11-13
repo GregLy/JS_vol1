@@ -1,9 +1,13 @@
 $(function(){
   let carouselList = $("#carousel ul");
-  setInterval(changeSlide, 3000); //every 3 seconds, it performs a function to change the slide
-  carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
-  let firstItem = carouselList.find("li:first");
-  let lastItem = carouselList.find("li:last");
-  lastItem.after(firstItem)
-  carouselList.css({marginLeft:0}
+  function changeSlide (){
+    carouselList.animate({'marginLeft':'-=400'}, 500, movedSlide);
+    console.log 
+  }
+  function moveEverySlide (){
+  var firstItem = carouselList.find("li:first");
+  var lastItem = carouselList.find("li:last");
+  }
+
 });
+
