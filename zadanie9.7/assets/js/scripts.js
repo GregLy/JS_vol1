@@ -113,5 +113,16 @@ function setGamePoints() {
   computerPointsElem.innerHTML = computer.score;
 }
 
+function finalWinner(){
+  if (player.score === 10){
+    alert("you win")
+  }
+  else if ( computer.score === 10){
+    alert("you lose")
+}
+}
+
+
+
 
 
