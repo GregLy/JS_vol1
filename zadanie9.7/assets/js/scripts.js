@@ -105,11 +105,13 @@ function playerPick( playerPick ) {
   computerPickElem.innerHTML = computerPick;
 
   checkRoundWinner( playerPick, computerPick );
+  setGamePoints();
 }
 
 function setGamePoints() {
   playerPointsElem.innerHTML = player.score;
   computerPointsElem.innerHTML = computer.score;
 }
+
 
 
