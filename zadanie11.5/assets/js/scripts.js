@@ -5,14 +5,13 @@ $( () => {
   
   Button.prototype = {
     create: function() {
-      var self = this;
-      this.$element = $('<button>');
-      this.$element.text(this.text);
-      this.$element.click(function() {
-        alert(self.text);
-        $('body').append(this.$element);
-      });
-    }
+      this.element = document.createElement('button');
+      this.body = document.createTextNode(this.text);
+      this.element.appendChild(this.body);
+      this.element.onclick = () => {
+        alert(this.text);
+      }
+      document.body.appendChild(this.element);
     }
   }
 
