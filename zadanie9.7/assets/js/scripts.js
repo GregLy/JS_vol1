@@ -111,16 +111,19 @@ function playerPick( playerPick ) {
 function setGamePoints() {
   playerPointsElem.innerHTML = player.score;
   computerPointsElem.innerHTML = computer.score;
+  finalWinner();
 }
 
 function finalWinner(){
   if (player.score === 10){
-    alert("you win")
+    alert("you win");
   }
   else if ( computer.score === 10){
-    alert("you lose")
+    alert("you lose");
 }
 }
+
+
 
 
 
